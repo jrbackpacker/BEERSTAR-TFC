@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BeerStar</string>
+    <string name="carrito" />
+    <string name="BeerSTar" />
+    <string name="menu" />
+    <string name="menuS" />
+    <string name="logo_proveedor_description" />
+    <string name="imagen_articulo" />
+    <string name="imagen_articulo_description" />
+    <string name="usuario" />
+    <string name="telefono">Telefono</string>
+    <string name="direccion">Direccion</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="crear_usuario">Crear Usuario</string>
+    <string name="nombre">Nombre</string>
+    <string-array name="filtros_tienda">
+        <item>Sin ordenar</item> <item>Nombre (A-Z)</item>
+        <item>Nombre (Z-A)</item>
+        <item>Precio (Más bajo)</item>
+        <item>Precio (Más alto)</item>
+        <item>Categoría</item>
+    </string-array>
+
+</resources>

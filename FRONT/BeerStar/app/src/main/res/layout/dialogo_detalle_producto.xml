@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <!-- Imagen del producto -->
+        <ImageView
+            android:id="@+id/imagen_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription=""/>
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/nombre_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/descripcion_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/precio_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Graduación -->
+        <TextView
+            android:id="@+id/graduacion_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Categoría -->
+        <TextView
+            android:id="@+id/categoria_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</ScrollView>

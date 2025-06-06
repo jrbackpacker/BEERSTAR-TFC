@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Imagen del artículo -->
+        <ImageView
+            android:id="@+id/imagen_articulo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/carrito"
+            android:contentDescription="@string/imagen_articulo_description" />
+
+        <!-- Info y botones en vertical -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Información del artículo -->
+            <TextView
+                android:id="@+id/nombre_articulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/descripcion_articulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/precio_articulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio:"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/cantidad_articulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Botones de acción -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRestar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/menos"
+                    app:iconTint="#FFCC24"
+                    app:backgroundTint="@android:color/transparent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSumar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/mas"
+                    android:layout_marginStart="8dp"
+                    app:iconTint="#FFCC24"
+                    app:backgroundTint="@android:color/transparent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/borrar"
+                    android:layout_marginStart="8dp"
+                    app:iconTint="#FFCC24"
+                    app:backgroundTint="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
